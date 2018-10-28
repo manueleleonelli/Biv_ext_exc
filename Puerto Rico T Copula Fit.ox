@@ -49,7 +49,7 @@ decl mu1 = <10,200>, eta1 = <2,2>, xi1 = 0.1, u1 = 373, sigma1 = 10, p1 = <0.5,0
 decl p = <1>, rho = <0.9>, v= <2>, dim = columns(rho);
 
 // Load the dataset - Use the right directory
-decl data = loadmat("/Users/manuele/Dropbox/Dani/Data_River/data1492.dat");
+decl data = loadmat("/Users/manuele/Dropbox/Dani/Data_River/Puerto Rico Fit Dataset.dat");
 
 // Values for the prior distribution
 decl b1 = constant(2.1,1,dim1), a1 = constant(meanr(mu1),1,dim1).*(b1[0]-1), d1 = constant(0.5,1,dim1),  c1 = d1[0]./constant(meanr(eta1),1,dim1), meanu1 =373, sdu1 = 50;
